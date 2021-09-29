@@ -5,9 +5,12 @@
   padding: 2rem;
 }
 
+body {
+  margin: auto;
+}
+
 .list-item-inline {
   display: inline;
-  padding: 0rem 0.5rem;
 }
 
 .songs-card {
@@ -19,6 +22,27 @@
   border-radius: 0.5rem;
 }
 
-.genres {
+.genre-btn {
+  cursor: pointer;
+  background: rgb(229, 231, 235);
+  border-radius: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: 1px solid black;
+  margin: 1rem 0.3rem;
+}
+
+.description {
   display: block;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+}
+
+.song-name {
+  font-size: larger;
+}
+
+.artist-name {
+  font-size: smaller;
 }

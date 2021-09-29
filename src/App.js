@@ -29,14 +29,14 @@ export default function App() {
     updateSongs(
       songs.map((song) => {
         return (
-          <ul className="songs-card">
-            <li className="list-non-bullet" key="{song}">
+          <div className="songs-card">
+            <div className="song-name" key="{song}">
               {song}
-            </li>
-            <li className="list-non-bullet" key="{song}">
+            </div>
+            <div className="artist-name" key="{song}">
               {musicList[genre][song]}
-            </li>
-          </ul>
+            </div>
+          </div>
         );
       })
     );
@@ -44,19 +44,19 @@ export default function App() {
 
   return (
     <div className="App">
-      <h1>Music Recommendation</h1>
+      <h1>♫ Music Recommendation</h1>
+      <p className="description">
+        {" "}
+        List of music I would recommend you to listen
+      </p>
       <div className="genres">
-        <ul>
-          {genres.map((genre) => {
-            return (
-              <li className="list-item-inline">
-                <button className="genre-btn" onClick={() => listSongs(genre)}>
-                  {genre}
-                </button>
-              </li>
-            );
-          })}
-        </ul>
+        {genres.map((genre) => {
+          return (
+            <button className="genre-btn" onClick={() => listSongs(genre)}>
+              {genre}
+            </button>
+          );
+        })}
       </div>
       <hr></hr>
       <div className="songs">{songList}</div>
