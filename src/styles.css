@@ -1,0 +1,24 @@
+.App {
+  font-family: sans-serif;
+  max-width: 600px;
+  margin: auto;
+  padding: 2rem;
+}
+
+.list-item-inline {
+  display: inline;
+  padding: 0rem 0.5rem;
+}
+
+.songs-card {
+  list-style: none;
+  padding: 1rem;
+  border: 1px solid rgb(209, 213, 219);
+  width: 70%;
+  margin: 1rem 0rem;
+  border-radius: 0.5rem;
+}
+
+.genres {
+  display: block;
+}
